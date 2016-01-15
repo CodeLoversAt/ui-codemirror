@@ -1,7 +1,7 @@
 'use strict';
 var packageName = 'codelovers:angular-ui-codemirror-all-modes';
 var where = 'client'; // where to install: 'client' or 'server'. For both, pass nothing.
-var version = '0.3.2';
+var version = '0.3.3';
 var summary = 'This directive allows you to add CodeMirror to your textarea elements. Includes all modes';
 var gitLink = 'https://github.com/hhravn/ui-codemirror';
 var documentationFile = 'README.md';

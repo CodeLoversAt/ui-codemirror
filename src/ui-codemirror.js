@@ -5,12 +5,12 @@
  */
 angular.module('ui.codemirror', [])
   .constant('uiCodemirrorConfig', {})
-  .directive('uiCodemirror', uiCodemirrorDirective);
+  .directive('uiCodemirror', ['$timeout', 'uiCodemirrorConfig', uiCodemirrorDirective]);
 
 /**
  * @ngInject
  */
-var uiCodemirrorDirective = ['$timeout', 'uiCodemirrorConfig', function ($timeout, uiCodemirrorConfig) {
+function uiCodemirrorDirective($timeout, uiCodemirrorConfig) {
 
   return {
     restrict: 'EA',
@@ -147,4 +147,4 @@ var uiCodemirrorDirective = ['$timeout', 'uiCodemirrorConfig', function ($timeou
     });
   }
 
-}];
+}
